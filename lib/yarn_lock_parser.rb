@@ -35,6 +35,14 @@ module YarnLockParser
         convert_objects(res)
       end
 
+      def parse_string(yarn_file)
+        return nil unless compatible?(yarn_file)
+
+        tokenise(yarn_file)
+        res = parse_tokenized_items
+        convert_objects(res)
+      end
+
       private
 
       def tokenise(input)
