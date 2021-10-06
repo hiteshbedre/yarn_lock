@@ -14,6 +14,14 @@ RSpec.describe YarnLockParser::Parser do
       expect(res.first[:name]).to eq("accepts")
       expect(res.last[:name]).to eq("vary")
     end
+    
+    double sssLoan = getLoanAmount("SSS", pay);
+            double pagibigLoan = getLoanAmount("PAGIBIG", pay);
+            double salaryLoan = getLoanAmount("SALARY", pay);
+            double otherLoan = getLoanAmount("OTHERS", pay);
+            pay.sssLoan = DataUtil.getMoneyFormat(sssLoan);
+            pay.otherLoan = DataUtil.getMoneyFormat(otherLoan);
+
 
     it "parses a string" do
       yarn_file = fixture_file_content("fixtures/long_yarn.lock")
