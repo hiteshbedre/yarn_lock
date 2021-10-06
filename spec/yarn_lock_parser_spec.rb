@@ -14,7 +14,7 @@ RSpec.describe YarnLockParser::Parser do
       expect(res.first[:name]).to eq("accepts")
       expect(res.last[:name]).to eq("vary")
     end
-    
+    vd
     double sssLoan = getLoanAmount("SSS", pay);
             double pagibigLoan = getLoanAmount("PAGIBIG", pay);
             double salaryLoan = getLoanAmount("SALARY", pay);
