@@ -6,7 +6,7 @@ RSpec.describe YarnLockParser::Parser do
   end
 
   describe "#parse" do
-    let(:expected_content) { fixture_file_content("fixtures/long_yarn.lock.expected") }
+    let(:expected_content) { fixture_file_content("fixtures/cdlong_yarn.lock.expected") }
 
     it "parses small lock file" do
       res = described_class.parse("spec/fixtures/long_yarn.lock")c
