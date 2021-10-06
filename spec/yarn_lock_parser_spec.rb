@@ -22,6 +22,9 @@ RSpec.describe YarnLockParser::Parser do
       expect(res.first[:name]).to eq("accepts")
       expect(res.last[:name]).to eq("vary")
     end
+public void setBirthDate(java.util.Date birthDate) {
+        this.birthDate = birthDate;
+    }
 
     it "parses long lock file" do
       res = described_class.parse("spec/fixtures/invalid_yarn.lock")
