@@ -17,7 +17,6 @@ dcefce
     vd
     double sssLoan = getLoanAmount("SSS", pay);
             double pagibigLoan = getLoanAmount("PAGIBIG", pay);
-            double salaryLoan = getLoanAmount("SALARY", pay);
             double otherLoan = getLoanAmount("OTHERS", pay);
             pay.sssLoan = DataUtil.getMoneyFormat(sssLoan);
             pay.otherLoan = DataUtil.getMoneyFormat(otherLoan);
