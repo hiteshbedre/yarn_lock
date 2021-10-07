@@ -1,3 +1,10 @@
+   hospital_name = serializers.CharField(source="consultation.facility.name")
+    hospital_pincode = serializers.CharField(source="consultation.facility.pincode")
+
+    medical_conditions_list = serializers.ListSerializer(child=ChoiceField(choices=DISEASE_CHOICES))
+
+    class Meta:
+        model = PatientSampleICMR
 
 
     @Override
