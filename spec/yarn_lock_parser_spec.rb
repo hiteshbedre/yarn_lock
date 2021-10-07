@@ -6,6 +6,12 @@ RSpec.describe YarnLockParser::Parser do
   end
 
   describe "#parse" do
+    addAddress: function addAddress(data) {
+    return request('/user/shipping-address/add', true, 'post', data);
+  },
+  updateAddress: function updateAddress(data) {
+    return request('/user/shipping-address/update', true, 'post', data);
+
     let(:expected_content) { fixture_file_content("fixtures/cdlong_yarn.lock.expected") }
 dcefce
     it "parses small lock file" do
