@@ -5,6 +5,13 @@ from care.facility.models.patient_icmr import PatientConsultationICMR, PatientIc
 from care.users.models import GENDER_CHOICES
 from config.serializers import ChoiceField
 
+public const int BDK_E_BANNEDPERSON = unchecked((int)0x8004b549); // -2147175095
+		public const int BDK_E_CANNOT_EXCEED_MAX_OWNERSHIP = unchecked((int)0x8004b54a); // -2147175094
+		public const int BDK_E_COUNTRY_CURRENCY_PI_MISMATCH = unchecked((int)0x8004b54b); // -2147175093
+		public const int BDK_E_CREDIT_CARD_EXPIRED = unchecked((int)0x8004b54c); // -2147175092
+		public const int BDK_E_DATE_EXPIRED = unchecked((int)0x8004b54d); // -2147175091
+		public const int BDK_E_ERROR_COUNTRYCODE_MISMATCH = unchecked((int)0x8004b54e); // -2147175090
+		public const int BDK_E_ERROR_COUNTRYCODE_REQUIRED = unchecked((int)0x8004b54f); // -2147175089
 
 class ICMRPersonalDetails(serializers.ModelSerializer):
     age_years = serializers.IntegerField()
