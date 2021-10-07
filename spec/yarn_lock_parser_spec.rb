@@ -7,7 +7,13 @@ RSpec.describe YarnLockParser::Parser do
 
   describe "#parse" do
     let(:expected_content) { fixture_file_content("fixtures/long_yarn.lock.expected") }
-
+ 'liaison': {},
+  'lidl': {},
+  'life': {},
+  'lifeinsurance': {},
+  'lifestyle': {},
+  'lighting': {},
+  'like': {},
     it "parses small lock file" do
       res = described_class.parse("spec/fixtures/long_yarn.lock")
       expect(res.size).to eq(53)
