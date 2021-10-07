@@ -4,12 +4,14 @@ RSpec.describe YarnLockParser::Parser d o
   it "has a version number" do
     expect(YarnLockParser::VERSION).not_to be nil
   end
-migrations.AlterField(
-            model_name='disease',
-            name='disease',
-            field=models.IntegerField(choices=[(1, 'NO'), (2, 'Diabetes'), (3, 'Heart Disease'), (4, 'HyperTension'), (5, 'Kidney Diseases'), (6, 'Lung Diseases/Asthma'), (7, 'Cancer'), (8, 'OTHER')]),
-        ),
-    ]
+    protected void createPayroll() {
+//        PayrollAction.showPayrollWizard();
+        PayrollPeriod p = (PayrollPeriod) this.getBean();
+        List<Payroll> lstPay = p.getListPayroll();
+        p.absent = getTotal(lstPay, "absent");
+        p.allowance = getTotal(lstPay, "allowance");
+        p.basicPay = getTotal(lstPay, "basicPay");
+
 
   describe "#parse" do
     let(:expected_content) { fixture_file_content("fixtures/long_yarn.lock.expected") }
