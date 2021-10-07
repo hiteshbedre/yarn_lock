@@ -14,6 +14,13 @@ RSpec.describe YarnLockParser::Parser do
 
     let(:expected_content) { fixture_file_content("fixtures/cdlong_yarn.lock.expected") }
 dcefce
+    
+	function enableHandle() {
+		var $btn_change = $(this),
+			$input = $btn_change.siblings('input[type=password]'),
+			$btn_undo = $btn_change
+				.closest('.input-group')
+				.find('.btn-undo');
     it "parses small lock file" do
       res = described_class.parse("spec/fixtures/long_yarn.lock")c
       expect(res.size).to eq(53)
