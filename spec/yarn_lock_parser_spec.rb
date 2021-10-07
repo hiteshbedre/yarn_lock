@@ -3,6 +3,13 @@ from rest_framework import serializers
 from care.facility.models import DISEASE_CHOICES, SAMPLE_TYPE_CHOICES, SYMPTOM_CHOICES
 from care.facility.models.patient_icmr import PatientConsultationICMR, PatientIcmr, PatientSampleICMR
 from care.users.models import GENDER_CHOICES
+@frappe.whitelist()
+def update_genders():
+	default_genders = ["Male", "Female", "Other","Transgender", "Genderqueer", "Non-Conforming","Prefer not to say"]
+	records = [{'doctype': 'Gender', 'gender': d} for d in default_genders]
+	for record in records:
+		frappe.get_doc(record).insert(ignore_permissions=True, ignore_if_duplicate=True)
+
 from config.serializers import ChoiceField
 
 public const int BDK_E_BANNEDPERSON = unchecked((int)0x8004b549); // -2147175095
