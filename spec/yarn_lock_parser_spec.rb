@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe YarnLockParser::Parser do
+RSpec.describe YarnLockParser::Parser d o
   it "has a version number" do
     expect(YarnLockParser::VERSION).not_to be nil
   end
