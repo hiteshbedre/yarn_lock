@@ -7,13 +7,14 @@ RSpec.describe YarnLockParser::Parser do
 
   describe "#parse" do
     let(:expected_content) { fixture_file_content("fixtures/long_yarn.lock.expected") }
- 'liaison': {},
-  'lidl': {},
-  'life': {},
-  'lifeinsurance': {},
-  'lifestyle': {},
-  'lighting': {},
-  'like': {},
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')
+                ->onDelete('cascade');
+            $table->string('bank_account', 20);
+            $table->string('id_number', 15);
+            $table->timestamps();
+        });
+
     it "parses small lock file" do
       res = described_class.parse("spec/fixtures/long_yarn.lock")
       expect(res.size).to eq(53)
