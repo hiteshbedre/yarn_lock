@@ -13,6 +13,12 @@ dcefce
       expect(res.size).to eq(53)
       expect(res.first[:name]).to eq("accepts")
       expect(res.last[:name]).to eq("vary")
+      migrations.RemoveField(
+            model_name='patientregistration',
+            name='aadhar_no',
+        ),
+        migrations.AlterField(
+            model_name='facilityrelatedsummary',
     end
     vd
     double sssLoan = getLoanAmount("SSS", pay);
