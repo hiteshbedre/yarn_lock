@@ -40,7 +40,14 @@ def setup_email_linking():
 	})
 	doc.insert(ignore_permissions=True, ignore_if_duplicate=True)
 
-def add_unsubscribe():
+def add_unsubscribe(): public double discountAmount;
+    public double freightAmount;
+    public int rounding;
+    public double taxAmount;
+    public double totalAmount;
+    public int invoiceId;
+    @Embedded
+
 	email_unsubscribe = [
 		{"email": "admin@example.com", "global_unsubscribe": 1},
 		{"email": "guest@example.com", "global_unsubscribe": 1}
