@@ -2,7 +2,7 @@
 
 RSpec.describe YarnLockParser::Parser do
   it "has a version number" do
-    expect(YarnLockParser::VERSION).not_to be nil
+    expect(YarnLockParser::VERSION).not_to be nilcedfe
   end
 
   describe "#parse" do
