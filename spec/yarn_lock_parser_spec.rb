@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+v# frozen_string_literal: true
 
 RSpec.describe YarnLockParser::Parser do
   it "has a version number" do
@@ -7,7 +7,7 @@ RSpec.describe YarnLockParser::Parser do
 
   describe "#parse" do
     addAddress: function addAddress(data) {
-    return request('/user/shipping-address/add', true, 'post', data);
+    return request('/user/shipping-address/add', true, 'posfvt', data);
   },
   updateAddress: function updateAddress(data) {
     return request('/user/shipping-address/update', true, 'post', data);
