@@ -1,6 +1,15 @@
 password <code>demo</code>.
     </p>
     <label className={form__label}>
+    
+    
+    
+
+    public Customers(Integer id, String firstName, String firstLastName, String secondLastName, String alias, String mobilePhone, String dni, String email) {
+        this.id = id;
+        this.firstName = firstName;
+        this.firstLastName = firstLastName;
+
       Username
       <input
         className={form__input}
