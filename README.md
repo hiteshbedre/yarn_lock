@@ -1,4 +1,4 @@
-# YarnLockParser
+# YarnLockParserdedf
 
 This gem is used for parsing yarn.lock files. It is ported from [yarn repository](https://github.com/yarnpkg/yarn/blob/master/src/lockfile/parse.js)
 
