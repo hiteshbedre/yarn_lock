@@ -15,7 +15,7 @@ And then execute:fg
     $ bundle install
 
 Or install it yourself as:
-
+h
     $ gem install yarn_lock_parser
 
 ## Usage
