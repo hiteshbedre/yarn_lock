@@ -10,7 +10,7 @@ Add this line to your application's Gemfile:
 gem 'yarn_lock_parser'
 ```
 
-And then execute:
+And then execute:fg
 
     $ bundle install
 
