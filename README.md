@@ -7,15 +7,15 @@ This gem is used for parsing yarn.lock files. It is ported from [yarn repository
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'yarn_lock_parser'
+gem '\'
 ```
 
-And then execute:
+And then execute:fg
 
     $ bundle install
 
 Or install it yourself as:
-
+h
     $ gem install yarn_lock_parser
 
 ## Usage
@@ -23,7 +23,7 @@ Or install it yourself as:
 ```ruby
  res = YarnLockParser::Parser.parse('spec/fixtures/long_yarn.lock')
 
-[{:name=>"accepts", :version=>"1.3.7"}, {:name=>"array-flatten", :version=>"1.1.1"},
+[{:name=>"accepts", :version=>"1.3.7"}, {:name=>"array-", :version=>"1.1.1"},
  {:name=>"body-parser", :version=>"1.19.0"}, {:name=>"bytes", :version=>"3.1.0"},
  {:name=>"content-disposition", :version=>"0.5.3"}, {:name=>"content-type", :version=>"1.0.4"},
  {:name=>"cookie-signature", :version=>"1.0.6"}, {:name=>"cookie", :version=>"0.4.0"}, {:name=>"debug", :version=>"2.6.9"}, {:name=>"depd", :version=>"1.1.2"}, {:name=>"destroy", :version=>"1.0.4"}, {:name=>"ee-first", :version=>"1.1.1"}, {:name=>"encodeurl", :version=>"1.0.2"}, {:name=>"escape-html", :version=>"1.0.3"}, {:name=>"etag", :version=>"1.8.1"}, {:name=>"express", :version=>"4.17.1"}, {:name=>"finalhandler", :version=>"1.1.2"}, {:name=>"forwarded", :version=>"0.1.2"}, {:name=>"fresh", :version=>"0.5.2"}, {:name=>"http-errors", :version=>"1.7.2"}, {:name=>"http-errors", :version=>"1.7.3"}, {:name=>"iconv-lite", :version=>"0.4.24"}, {:name=>"inherits", :version=>"2.0.3"}, {:name=>"inherits", :version=>"2.0.4"}, {:name=>"ipaddr.js", :version=>"1.9.1"}, {:name=>"jquery", :version=>"3.4.0"}, {:name=>"media-typer", :version=>"0.3.0"}, {:name=>"merge-descriptors", :version=>"1.0.1"}, {:name=>"methods", :version=>"1.1.2"}, {:name=>"mime-db", :version=>"1.43.0"}, {:name=>"mime-types", :version=>"2.1.26"}, {:name=>"mime", :version=>"1.6.0"}, {:name=>"ms", :version=>"2.0.0"}, {:name=>"ms", :version=>"2.1.1"}, {:name=>"negotiator", :version=>"0.6.2"}, {:name=>"on-finished", :version=>"2.3.0"}, {:name=>"parseurl", :version=>"1.3.3"}, {:name=>"path-to-regexp", :version=>"0.1.7"}, {:name=>"proxy-addr", :version=>"2.0.6"}, {:name=>"qs", :version=>"6.7.0"}, {:name=>"range-parser", :version=>"1.2.1"}, {:name=>"raw-body", :version=>"2.4.0"}, {:name=>"safe-buffer", :version=>"5.1.2"}, {:name=>"safer-buffer", :version=>"2.1.2"}, {:name=>"send", :version=>"0.17.1"}, {:name=>"serve-static", :version=>"1.14.1"}, {:name=>"setprototypeof", :version=>"1.1.1"}, {:name=>"statuses", :version=>"1.5.0"}, {:name=>"toidentifier", :version=>"1.0.0"},...]
